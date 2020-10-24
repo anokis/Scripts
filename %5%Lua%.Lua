@@ -21,7 +21,7 @@ BasicFunctionsFrame.Parent = BasicFunctions
 BasicFunctionsFrame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 BasicFunctionsFrame.BorderColor3 = Color3.fromRGB(116, 116, 116)
 BasicFunctionsFrame.BorderSizePixel = 3
-BasicFunctionsFrame.Position = UDim2.new(0.0121291149, 0, 0.718884289, 0)
+BasicFunctionsFrame.Position = UDim2.new(-0.35, 0,0.719, 0)
 BasicFunctionsFrame.Size = UDim2.new(0.300361902, 0, 0.261370778, 0)
 
 DarkScriptsBasic.Name = "DarkScriptsBasic"
@@ -106,6 +106,10 @@ Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
 Noclip.TextScaled = true
 Noclip.TextSize = 14.000
 Noclip.TextWrapped = true
+
+wait(1)
+BasicFunctionsFrame:TweenPosition(UDim2.new(0.0121291149, 0, 0.718884289),"Out", "Linear", 0.8, true)
+
 
 --//Functions//--
 

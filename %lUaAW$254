@@ -1,0 +1,177 @@
+local Whitelisted = {
+
+	MAXIM57NOOB = "MAXIM57NOOB";
+	Dessert_887 = "Dessert_887";
+	xxredskeletonbzttxx = "xxredskeletonbzttxx";
+	
+	
+
+
+}
+
+
+
+local PlayerIsWhiteListed = false
+
+if game.Players.LocalPlayer.Name == Whitelisted.MAXIM57NOOB then
+	PlayerIsWhiteListed = true
+end
+if game.Players.LocalPlayer.Name == Whitelisted.xxredskeletonbzttxx then
+	PlayerIsWhiteListed = true
+end
+
+
+
+local SuberId = 3823781113
+local BuildABoatId = 537413528 
+local RoGhoulId = 914010731
+local MadCityId = 1224212277
+local TappingId = 5098929086
+
+-- Instances:
+
+local WhiteListCheck = Instance.new("ScreenGui")
+local heckWhiteList = Instance.new("Frame")
+local nameWhiteList = Instance.new("TextLabel")
+local Loading = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ScriptByWhiteList = Instance.new("TextLabel")
+local ScriptVersion = Instance.new("TextLabel")
+local Players = game:GetService("Players")
+
+local player = Players.LocalPlayer
+
+
+local userId = player.UserId
+local thumbType = Enum.ThumbnailType.HeadShot
+local thumbSize = Enum.ThumbnailSize.Size420x420
+local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+
+--Properties:
+
+WhiteListCheck.Name = "WhiteListCheck"
+WhiteListCheck.Parent = game.CoreGui
+WhiteListCheck.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+heckWhiteList.Name = "heckWhiteList"
+heckWhiteList.Parent = WhiteListCheck
+heckWhiteList.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+heckWhiteList.BorderColor3 = Color3.fromRGB(86, 86, 86)
+heckWhiteList.BorderSizePixel = 3
+heckWhiteList.Position = UDim2.new(0.402, 0,-0.25, 0)
+heckWhiteList.Size = UDim2.new(0.197812542, 0, 0.197545543, 0)
+
+nameWhiteList.Name = "nameWhiteList"
+nameWhiteList.Parent = heckWhiteList
+nameWhiteList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameWhiteList.BackgroundTransparency = 1.000
+nameWhiteList.Position = UDim2.new(0.168316826, 0, 0, 0)
+nameWhiteList.Size = UDim2.new(0.660066009, 0, 0.270270258, 0)
+nameWhiteList.Font = Enum.Font.FredokaOne
+nameWhiteList.Text = "Dark Scripts"
+nameWhiteList.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameWhiteList.TextScaled = true
+nameWhiteList.TextSize = 14.000
+nameWhiteList.TextWrapped = true
+
+Loading.Name = "Loading"
+Loading.Parent = heckWhiteList
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.BackgroundTransparency = 1.000
+Loading.Position = UDim2.new(0.290083975, 0, 0.795018554, 0)
+Loading.Size = UDim2.new(0.417866379, 0, 0.17109932, 0)
+Loading.Font = Enum.Font.FredokaOne
+Loading.Text = "Loading..."
+Loading.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loading.TextScaled = true
+Loading.TextSize = 14.000
+Loading.TextWrapped = true
+
+ImageLabel.Parent = heckWhiteList
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.377906024, 0, 0.289018869, 0)
+ImageLabel.Size = UDim2.new(0.236966774, 0, 0.421843648, 0)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ScriptByWhiteList.Name = "ScriptByWhiteList"
+ScriptByWhiteList.Parent = WhiteListCheck
+ScriptByWhiteList.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptByWhiteList.BackgroundTransparency = 1.000
+ScriptByWhiteList.Position = UDim2.new(-0.000482618809, 0, 0, 0)
+ScriptByWhiteList.Size = UDim2.new(0.109545134, 0, 0.0197092481, 0)
+ScriptByWhiteList.Font = Enum.Font.DenkOne
+ScriptByWhiteList.Text = "Script By: Ansteu [The Dark Hub]"
+ScriptByWhiteList.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptByWhiteList.TextScaled = true
+ScriptByWhiteList.TextSize = 14.000
+ScriptByWhiteList.TextWrapped = true
+
+ScriptVersion.Name = "ScriptVersion"
+ScriptVersion.Parent = WhiteListCheck
+ScriptVersion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptVersion.BackgroundTransparency = 1.000
+ScriptVersion.Position = UDim2.new(-0.000482618809, 0, 0.01970925, 0)
+ScriptVersion.Size = UDim2.new(0.109545134, 0, 0.0197092481, 0)
+ScriptVersion.Font = Enum.Font.DenkOne
+ScriptVersion.Text = "Version : 1.0"
+ScriptVersion.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptVersion.TextScaled = true
+ScriptVersion.TextSize = 14.000
+ScriptVersion.TextWrapped = true
+
+--//White List//--
+
+ImageLabel.Image = content
+wait(1)
+heckWhiteList:TweenPosition(UDim2.new(0.401, 0,0.401, 0), "Out", "Linear", 1, true)
+wait(0.8)
+Loading.Text = "Loading"
+wait(0.3)
+Loading.Text = "Loading."
+wait(1)
+Loading.Text = "Loading.."
+wait(0.8)
+Loading.Text = "Loading..."
+wait(0.3)
+Loading.Text = "Loading"
+wait(0.5)
+Loading.Text = "Loading."
+wait(0.2)
+Loading.Text = "Loading.."
+wait(0.1)
+Loading.Text = "Loading..."
+wait(0.3)
+Loading.Text = "Done!"
+wait(0.5)
+Loading.Text = "Checking White List.."
+wait(0.5)
+Loading.Text = "Turning Anti-Ban"
+wait(1)
+Loading.Text = "Done!"
+wait(1)
+if PlayerIsWhiteListed == true then
+	heckWhiteList:Destroy()
+	if game.PlaceId == BuildABoatId then
+	elseif game.PlaceId == MadCityId then
+
+	elseif game.PlaceId == SuberId then
+
+	elseif game.PlaceId == TappingId then
+
+	else
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/anokis/Scripts/main/%255%25Lua%25.Lua"))()
+
+
+	end
+
+
+end
+
+if PlayerIsWhiteListed == false then
+	Loading.Text = "No access!"
+	wait(5)
+	WhiteListCheck.Enabled = false
+	script:Destroy()
+end

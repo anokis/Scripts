@@ -20,6 +20,10 @@ if game.Players.LocalPlayer.Name == Whitelisted.xxredskeletonbzttxx then
 	PlayerIsWhiteListed = true
 end
 
+if game.Players.LocalPlayer.Name == Whitelisted.Dessert_887 then
+	PlayerIsWhiteListed = true
+end
+
 
 
 local SuberId = 3823781113

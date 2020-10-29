@@ -169,6 +169,7 @@ wait(1)
 if PlayerIsWhiteListed == true then
 	heckWhiteList:Destroy()
 	if game.PlaceId == BuildABoatId then
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/anokis/Scripts/main/%25ASDJ%25LUA%24"))()
 	elseif game.PlaceId == MadCityId then
 
 	elseif game.PlaceId == SuberId then

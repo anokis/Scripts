@@ -1,0 +1,242 @@
+
+-- Instances:
+
+local BuildABoat = Instance.new("ScreenGui")
+local BuildaBoatFR = Instance.new("Frame")
+local DarkScriptsBoat = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local AutoFarm = Instance.new("TextButton")
+local InfBlocks = Instance.new("TextButton")
+local FarmSpeed = Instance.new("TextBox")
+local openExit = Instance.new("TextButton")
+local BuildaBoatOpen = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local DarkScriptsBoatOpen = Instance.new("TextLabel")
+
+--Properties:
+
+BuildABoat.Name = "BuildABoatGUI"
+BuildABoat.Parent = game.CoreGui
+BuildABoat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+BuildaBoatFR.Name = "BuildaBoatFR"
+BuildaBoatFR.Parent = BuildABoat
+BuildaBoatFR.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+BuildaBoatFR.BorderColor3 = Color3.fromRGB(116, 116, 116)
+BuildaBoatFR.BorderSizePixel = 3
+BuildaBoatFR.Position = UDim2.new(-0.349999994, 0, 0.625999987, 0)
+BuildaBoatFR.Size = UDim2.new(0.334983498, 0, 0.291497976, 0)
+
+DarkScriptsBoat.Name = "DarkScriptsBoat"
+DarkScriptsBoat.Parent = BuildaBoatFR
+DarkScriptsBoat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkScriptsBoat.BackgroundTransparency = 1.000
+DarkScriptsBoat.Position = UDim2.new(0.253694594, 0, 0, 0)
+DarkScriptsBoat.Size = UDim2.new(0.492610842, 0, 0.203703701, 0)
+DarkScriptsBoat.Font = Enum.Font.FredokaOne
+DarkScriptsBoat.Text = "Build A Boat"
+DarkScriptsBoat.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkScriptsBoat.TextScaled = true
+DarkScriptsBoat.TextSize = 14.000
+DarkScriptsBoat.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = BuildaBoatFR
+Exit.BackgroundColor3 = Color3.fromRGB(255, 46, 46)
+Exit.BorderColor3 = Color3.fromRGB(116, 116, 116)
+Exit.BorderSizePixel = 3
+Exit.Position = UDim2.new(0.253694594, 0, 0.814814806, 0)
+Exit.Size = UDim2.new(0.492610842, 0, 0.138888896, 0)
+Exit.Font = Enum.Font.FredokaOne
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = BuildaBoatFR
+AutoFarm.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+AutoFarm.BorderColor3 = Color3.fromRGB(38, 38, 38)
+AutoFarm.BorderSizePixel = 3
+AutoFarm.Position = UDim2.new(0.043175891, 0, 0.53730464, 0)
+AutoFarm.Size = UDim2.new(0.285714298, 0, 0.138888896, 0)
+AutoFarm.Font = Enum.Font.FredokaOne
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextScaled = true
+AutoFarm.TextSize = 14.000
+AutoFarm.TextWrapped = true
+
+InfBlocks.Name = "InfBlocks"
+InfBlocks.Parent = BuildaBoatFR
+InfBlocks.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+InfBlocks.BorderColor3 = Color3.fromRGB(38, 38, 38)
+InfBlocks.BorderSizePixel = 3
+InfBlocks.Position = UDim2.new(0.467010677, 0, 0.388888896, 0)
+InfBlocks.Size = UDim2.new(0.443349749, 0, 0.222222224, 0)
+InfBlocks.Font = Enum.Font.FredokaOne
+InfBlocks.Text = "Inf Blocks"
+InfBlocks.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfBlocks.TextScaled = true
+InfBlocks.TextSize = 14.000
+InfBlocks.TextWrapped = true
+
+FarmSpeed.Name = "FarmSpeed"
+FarmSpeed.Parent = BuildaBoatFR
+FarmSpeed.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+FarmSpeed.BorderColor3 = Color3.fromRGB(39, 39, 39)
+FarmSpeed.BorderSizePixel = 3
+FarmSpeed.Position = UDim2.new(0.0197145976, 0, 0.323449731, 0)
+FarmSpeed.Size = UDim2.new(0.332500786, 0, 0.131043792, 0)
+FarmSpeed.Font = Enum.Font.FredokaOne
+FarmSpeed.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+FarmSpeed.PlaceholderText = "Farm Speed"
+FarmSpeed.Text = ""
+FarmSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmSpeed.TextScaled = true
+FarmSpeed.TextSize = 14.000
+FarmSpeed.TextWrapped = true
+
+openExit.Name = "OpenExit"
+openExit.Parent = BuildaBoatFR
+openExit.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+openExit.BorderColor3 = Color3.fromRGB(38, 38, 38)
+openExit.BorderSizePixel = 3
+openExit.Position = UDim2.new(0.909994841, 0, 0.0496031307, 0)
+openExit.Size = UDim2.new(0.0618911125, 0, 0.102265261, 0)
+openExit.Font = Enum.Font.FredokaOne
+openExit.Text = "X"
+openExit.TextColor3 = Color3.fromRGB(255, 255, 255)
+openExit.TextScaled = true
+openExit.TextSize = 14.000
+openExit.TextWrapped = true
+
+BuildaBoatOpen.Name = "BuildaBoatOpen"
+BuildaBoatOpen.Parent = BuildABoat
+BuildaBoatOpen.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+BuildaBoatOpen.BorderColor3 = Color3.fromRGB(116, 116, 116)
+BuildaBoatOpen.BorderSizePixel = 3
+BuildaBoatOpen.Position = UDim2.new(-0.000793746382, 0, 0.953875005, 0)
+BuildaBoatOpen.Size = UDim2.new(0.226162404, 0, 0.0600056946, 0)
+
+Open.Name = "Open"
+Open.Parent = BuildaBoatOpen
+Open.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Open.BorderColor3 = Color3.fromRGB(38, 38, 38)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.707592487, 0, 0, 0)
+Open.Size = UDim2.new(0.292407513, 0, 0.801029563, 0)
+Open.Font = Enum.Font.FredokaOne
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+DarkScriptsBoatOpen.Name = "DarkScriptsBoatOpen"
+DarkScriptsBoatOpen.Parent = BuildaBoatOpen
+DarkScriptsBoatOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkScriptsBoatOpen.BackgroundTransparency = 1.000
+DarkScriptsBoatOpen.Position = UDim2.new(0.016472131, 0, -0.044158265, 0)
+DarkScriptsBoatOpen.Size = UDim2.new(0.649925292, 0, 0.824465334, 0)
+DarkScriptsBoatOpen.Font = Enum.Font.DenkOne
+DarkScriptsBoatOpen.Text = "AnsHub"
+DarkScriptsBoatOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkScriptsBoatOpen.TextScaled = true
+DarkScriptsBoatOpen.TextSize = 14.000
+DarkScriptsBoatOpen.TextWrapped = true
+
+--//Functions//--
+
+--Плавное перемещение--
+
+local UserInputService = game:GetService("UserInputService")
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	BuildaBoatFR.Position = BuildaBoatFR:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0.1, true) -- drag speed
+end
+
+BuildaBoatFR.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = BuildaBoatFR.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+BuildaBoatFR.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+
+--Кнопки
+InfBlocks.MouseButton1Click:Connect(function()
+	_G.a = true
+	while _G.a do
+		wait()
+		for i,v in pairs(game.Players.LocalPlayer.PlayerGui.BuildGui.InventoryFrame.ScrollingFrame.BlocksFrame:GetDescendants()) do 
+			if v.Name == "AmountText" then 
+				v.Text = "100000"
+			end
+		end
+	end
+	
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,6 +13,8 @@ local BuildaBoatOpen = Instance.new("Frame")
 local Open = Instance.new("TextButton")
 local DarkScriptsBoatOpen = Instance.new("TextLabel")
 
+
+
 --Properties:
 
 BuildABoat.Name = "BuildABoatGUI"
@@ -201,6 +203,16 @@ InfBlocks.MouseButton1Click:Connect(function()
 		end
 	end
 	
+end)
+
+Open.MouseButton1Click:Connect(function()
+	BuildaBoatFR:TweenPosition(UDim2.new(0.1, 0,0.626, 0), "Out", "Quad", 1, true)
+	
+end)
+
+openExit.MouseButton1Click:Connect(function()
+	BuildaBoatFR:TweenPosition(UDim2.new(-0.349999994, 0, 0.625999987, 0), "Out", "Quad", 1, true)
+
 end)
 
 

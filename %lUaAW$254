@@ -3,6 +3,7 @@ local Whitelisted = {
 	MAXIM57NOOB = "MAXIM57NOOB";
 	Dessert_887 = "Dessert_887";
 	xxredskeletonbzttxx = "xxredskeletonbzttxx";
+	ENGLISHpoli = "ENGLISHpoli";
 	
 	
 
@@ -21,6 +22,10 @@ if game.Players.LocalPlayer.Name == Whitelisted.xxredskeletonbzttxx then
 end
 
 if game.Players.LocalPlayer.Name == Whitelisted.Dessert_887 then
+	PlayerIsWhiteListed = true
+end
+
+if game.Players.LocalPlayer.Name == Whitelisted.ENGLISHpoli then
 	PlayerIsWhiteListed = true
 end
 
